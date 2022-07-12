@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" class="32x32">
+    <link rel="stylesheet" href="style.css"> 
+    <script defer src="script.js"></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <section class="section">
+        <div class="sect">
+            <h4 class="section-text">SPLI
+                <br>TTER</h4>
+        </div> 
+        <div class="calc-con">
+            <div class="calc-con__input">
+                <label for="calc-input" class="label">Bill</label>
+                <div class="calc-input__wrapper">
+                    <input type="number" name="calc" id="calc-input" class="text-input" placeholder="0">
+                    <img src="./images/icon-dollar.svg" alt="dollar-sign" class="dollar-icon">
+                </div>
+                
+                <h5>Select Tip %</h5>
+                <div class="tip-percent__con">
+                    <button class="tip-percent">5%</button>
+                    <button class="tip-percent">10%</button>
+                    <button class="tip-percent">15%</button>
+                    <button class="tip-percent">25%</button>
+                    <button class="tip-percent">50%</button>
+                    <input class=" custom" type="number" placeholder="Custom">
+                </div>
+
+                <div class="label-con">
+                    <label for="num-people">Number of People</label>
+                    <p class="error-msg"></p>
+                </div>
+                <div class="num-people-con">
+                    <input type="number" name="num" id="num-people" class="text-input " placeholder="0">
+                    <img src="./images/icon-person.svg" alt="person icon" class="person-icon">
+                </div>
+            </div>
+            <div class="calc-con__output">
+                <div class="calc-output__wrap">
+                    <div class="tip-amount output">
+                        <h5 class="output-title">Tip Amount<br>
+                            <span class="sec-col">/ person</span>
+                        </h5>
+                        <h3 class="output-text output-text__tip">$0.00</h3>
+                    </div>
+                    <div class="total output">
+                        <h5 class="output-title">Total<br>
+                            <span class="sec-col">/ person</span>
+                        </h5>
+                        <h3 class="output-text output-text__total">$0.00</h3>
+                    </div>
+                </div>
+                
+                <button type="button" class="reset-btn">RESET</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
